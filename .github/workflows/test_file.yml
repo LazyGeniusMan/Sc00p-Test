@@ -17,5 +17,4 @@ jobs:
         7z x $oldFile -oold
         7z x $newFile -onew
      - name: List Files
-       run: |
-        ls -R
+       run: ls -R
