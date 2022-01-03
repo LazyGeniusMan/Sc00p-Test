@@ -16,5 +16,5 @@ jobs:
         aria2c $newURL
         7z x $oldFile -oold
         7z x $newFile -onew
-     - name: List Files
-       run: ls -R
+    - name: List Files
+      run: ls -R
