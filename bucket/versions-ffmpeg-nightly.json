@@ -16,7 +16,7 @@
         "bin\\ffprobe.exe"
     ],
     "checkver": {
-        "github": "https://github.com/BtbN/FFmpeg-Builds",
+        "github": "https://github.com/BtbN/FFmpeg-Builds/releases",
         "regex": "/autobuild-(?<time>[\\d-]+)/ffmpeg-N-(?<version>\\d+)-g(?<hash>[a-z\\d]+)-win64-gpl\\.zip"
     },
     "autoupdate": {
