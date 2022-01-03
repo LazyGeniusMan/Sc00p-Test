@@ -8,8 +8,8 @@ jobs:
     steps:
     - name: Download & Extract
       run: |
-        oldURL="https://github.com/CCExtractor/ccextractor/releases/download/v0.88/ccextractor.0.88-windows.binaries.zip"
-        newURL="https://github.com/CCExtractor/ccextractor/releases/download/v0.94/CCExtractor_win_portable.zip"
+        oldURL="https://github.com/hluk/CopyQ/releases/download/v5.0.0/copyq-v5.0.0.zip"
+        newURL="https://github.com/hluk/CopyQ/releases/download/v6.0.1/copyq-6.0.1.zip"
         oldFile=${oldURL##*/}
         newFile=${newURL##*/}
         aria2c $oldURL
