@@ -3,8 +3,13 @@ on:
 name: Test File
 jobs:
   file1:
-    name: Test File 1
+    name: Test File
     runs-on: windows-latest
     steps:
-    - name: Download File 1
-      run: $pwd
+    - name: Test File
+      run: |
+        aria2c https://github.com/CCExtractor/ccextractor/releases/download/v0.94/CCExtractor_win_portable.zip
+        7z x ./CCExtractor_win_portable.zip -oextracted
+        cd extracted
+        ls
+      
