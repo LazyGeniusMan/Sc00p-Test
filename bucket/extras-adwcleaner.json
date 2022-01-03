@@ -20,8 +20,8 @@
         ]
     ],
     "checkver": {
-        "url": "https://support.malwarebytes.com/hc/en-us/articles/360038519954-Malwarebytes-AdwCleaner-Product-Lifecycle",
-        "regex": "<tbody><tr><td>([\\d.]+)<"
+        "url": "https://toolslib.net/downloads/viewdownload/1-adwcleaner/files/?t=release",
+        "regex": ">([\\d.]+)<"
     },
     "autoupdate": {
         "architecture": {
