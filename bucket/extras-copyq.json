@@ -24,9 +24,9 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/hluk/CopyQ/releases/download/v$version/copyq-v$version.zip"
+                "url": "https://github.com/hluk/CopyQ/releases/download/v$version/copyq-$version.zip"
             }
         },
-        "extract_dir": "copyq-v$version"
+        "extract_dir": "copyq-$version"
     }
 }
