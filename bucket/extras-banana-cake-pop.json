@@ -22,7 +22,7 @@
     "checkver": {
         "url": "https://raw.githubusercontent.com/ChilliCream/hotchocolate/main/website/src/docs/bananacakepop/index.md",
         "regex": "BananaCakePop-([\\w.-]+)\\.exe"
-    }
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {
