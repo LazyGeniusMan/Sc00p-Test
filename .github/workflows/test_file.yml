@@ -7,4 +7,4 @@ jobs:
     runs-on: windows-latest
     steps:
     - name: Download File 1
-      run: echo %cd%
+      run: $pwd
