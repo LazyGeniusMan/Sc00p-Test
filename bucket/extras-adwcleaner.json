@@ -21,7 +21,7 @@
     ],
     "checkver": {
         "url": "https://toolslib.net/downloads/viewdownload/1-adwcleaner/files/?t=release",
-        "regex": ">([\\d.]+)<"
+        "regex": ">([\\d.]+)<\\/td>"
     },
     "autoupdate": {
         "architecture": {
