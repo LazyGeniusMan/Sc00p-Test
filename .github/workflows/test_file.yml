@@ -1,0 +1,10 @@
+on:
+  workflow_dispatch:
+name: Test File
+jobs:
+  file1:
+    name: Test File 1
+    runs-on: windows-latest
+    steps:
+    - name: Download File 1
+      run: echo %cd%
