@@ -14,10 +14,13 @@ jobs:
         newFile1=${newURL1##*/}
         aria2c $oldURL1
         aria2c $newURL1
-        7z x $oldFile1 -o64bit\old
-        7z x $newFile1 -o64bit\new
+        7z x $oldFile1 -o64bit/old
+        7z x $newFile1 -o64bit/new
     - name: List Files 64 bit
-      run: ls -R
+      run: |
+        cd 64bit
+        ls -R
+        cd ..
     - name: Download & Extract Files 32 bit
       run: |
         oldURL2="https://www.dbvis.com/product_download/dbvis-11.0.5/media/dbvis_windows-x64_11_0_5.zip"
@@ -26,7 +29,9 @@ jobs:
         newFile2=${newURL2##*/}
         aria2c $oldURL2
         aria2c $newURL2
-        7z x $oldFile2 -o32bit\old
-        7z x $newFile2 -o32bit\new
+        7z x $oldFile2 -o32bit/old
+        7z x $newFile2 -o32bit/new
     - name: List Files 32 bit
-      run: ls -R
+      run: |
+        cd 32bit
+        ls -R
