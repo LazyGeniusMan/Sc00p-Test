@@ -48,7 +48,7 @@
             },
             "32bit": {
                 "url": "https://github.com/macchrome/winchrome/releases/download/v95.0.4638.69-r920003-Win64/ungoogled-chromium-95.0.4638.69-1_Win32.7z",
-                "hash": "sha1:f629743de7d1539fe6c1a6948891c2cef1e334f9"
+                "hash": "sha1:f629743de7d1539fe6c1a6948891c2cef1e334f9",
                 "extract_dir": "ungoogled-chromium-95.0.4638.69-1_Win32"
             }
         }
