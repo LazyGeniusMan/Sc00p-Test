@@ -3,13 +3,13 @@ on:
 name: Test File
 jobs:
   file1:
-    name: Test chromium dev
+    name: Test chromium dev nosync
     runs-on: ubuntu-latest
     steps:
     - name: Download & Extract Files 64 bit
       run: |
-        oldURL1="https://github.com/macchrome/chromium/releases/download/v91.0.4467.0-r869045-Win64/Chrome-bin-sync.7z"
-        newURL1="https://storage.googleapis.com/chromium-browser-snapshots/Win_x64/955019/chrome-win.zip"
+        oldURL1="https://github.com/macchrome/chromium/releases/download/v86.0.4185.0-r769185-Win64/Chrome-bin.7z"
+        newURL1="https://github.com/RobRich999/Chromium_Clang/releases/download/v99.0.4800.0-r954746-win64-sse3/chrome.zip"
         oldFile1=${oldURL1##*/}
         newFile1=${newURL1##*/}
         aria2c $oldURL1
@@ -23,8 +23,8 @@ jobs:
         cd ..
     - name: Download & Extract Files 32 bit
       run: |
-        oldURL2=""
-        newURL2=""
+        oldURL2="https://github.com/macchrome/chromium/releases/download/v86.0.4185.0-r769185-Win64/Chrome-bin.7z"
+        newURL2="https://github.com/RobRich999/Chromium_Clang/releases/download/v99.0.4778.0-r952844-win32-sse3/chrome.zip"
         oldFile2=${oldURL2##*/}
         newFile2=${newURL2##*/}
         aria2c $oldURL2
