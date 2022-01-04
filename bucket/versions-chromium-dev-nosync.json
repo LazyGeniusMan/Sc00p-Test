@@ -35,14 +35,14 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/RobRich999/Chromium_Clang/releases/download/v$matchChrome64version-win64-sse3/chrome.zip",
+                "url": "https://github.com/RobRich999/Chromium_Clang/releases/download/v$matchChrome64version-r$matchChrome64build-win64-sse3/chrome.zip",
                 "hash": {
-                    "url": "https://github.com/Hibbiki/chromium-win64/releases/",
+                    "url": "https://github.com/RobRich999/Chromium_Clang/releases",
                     "regex": "tag/v$matchChrome64version-r$matchChrome64build-win64-sse3[\\s\\S]*chrome.zip - $sha1"
                 }
             },
             "32bit": {
-                "url": "https://github.com/RobRich999/Chromium_Clang/releases/download/v$matchChrome32version-win64-sse3/chrome.zip",
+                "url": "https://github.com/RobRich999/Chromium_Clang/releases/download/v$matchChrome32version-r$matchChrome32build-win64-sse3/chrome.zip",
                 "hash": {
                     "url": "https://github.com/RobRich999/Chromium_Clang/releases",
                     "regex": "tag/v$matchChrome32version-r$matchChrome32build-win32-sse3[\\s\\S]*chrome.zip - $sha1"
