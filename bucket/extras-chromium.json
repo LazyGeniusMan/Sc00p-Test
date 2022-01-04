@@ -1,6 +1,6 @@
 {
     "##": "Check chromium.woolyss.com for different versions of Chromium releases.",
-    "version": "abc",
+    "version": "96.0.4664.93-r929512",
     "description": "Browser aiming for safer, faster, and more stable way for all users to experience the web.",
     "homepage": "https://www.chromium.org",
     "license": "BSD-3-Clause",
@@ -10,7 +10,7 @@
             "hash": "sha1:32dc3f7a270e2c3b6a83cef7ef0b544b19f82ebf"
         },
         "32bit": {
-            "url": "https://github.com/Hibbiki/chromium-win64/releases/download/v96.0.4664.93-r929512/chrome.sync.7z",
+            "url": "https://github.com/Hibbiki/chromium-win32/releases/download/v96.0.4664.93-r929512/chrome.sync.7z",
             "hash": "sha1:5213ce657a4ef2eb098d1d236182e21d363d3a8a"
         }
     },
