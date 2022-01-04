@@ -30,7 +30,7 @@
     "checkver": {
         "url": "https://github.com/RobRich999/Chromium_Clang/releases",
         "regex": "tree/v(?<chrome64version>[\\d.]+)-r(?<chrome64build>[\\d]+)-win64-sse3[\\s\\S]*tree/v(?<chrome32version>[\\d.]+)-r(?<chrome32build>[\\d]+)-win32-sse3",
-        "replace": "${chrome64Version}-r${chrome64build}"
+        "replace": "${chrome64version}-r${chrome64build}"
     },
     "autoupdate": {
         "architecture": {
