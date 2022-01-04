@@ -6,10 +6,14 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/macchrome/chromium/releases/download/v86.0.4185.0-r769185-Win64/Chrome-bin.7z",
-            "hash": "27391478d226e438395b95e6c16ae1fe8b61f6ef519db74534ebee697805c480",
-            "extract_dir": "Chrome-bin"
+            "hash": "27391478d226e438395b95e6c16ae1fe8b61f6ef519db74534ebee697805c480"
+        },
+        "32bit": {
+            "url": "https://github.com/RobRich999/Chromium_Clang/releases/download/v$matchChrome32version-win64-sse3/chrome.zip",
+            "hash": "27391478d226e438395b95e6c16ae1fe8b61f6ef519db74534ebee697805c481"
         }
     },
+    "extract_dir": "chrome-win32",
     "bin": [
         "chrome.exe",
         [
@@ -22,5 +26,28 @@
             "chrome.exe",
             "Chromium (dev)"
         ]
-    ]
+    ],
+    "checkver": {
+        "url": "https://github.com/RobRich999/Chromium_Clang/releases",
+        "regex": "tree/v(?<chrome64version>[\\d.]+)-r(?<chrome64build>[\\d]+)-win64-sse3[\\s\\S]*tree/v(?<chrome32version>[\\d.]+)-r(?<chrome32build>[\\d]+)-win32-sse3",
+        "replace": "${chrome64Version}-r${chrome64build}"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/RobRich999/Chromium_Clang/releases/download/v$matchChrome64version-win64-sse3/chrome.zip",
+                "hash": {
+                    "url": "https://github.com/Hibbiki/chromium-win64/releases/",
+                    "regex": "tag/v$matchChrome64version-r$matchChrome64build-win64-sse3[\\s\\S]*chrome.zip - $sha1"
+                }
+            },
+            "32bit": {
+                "url": "https://github.com/RobRich999/Chromium_Clang/releases/download/v$matchChrome32version-win64-sse3/chrome.zip",
+                "hash": {
+                    "url": "https://github.com/RobRich999/Chromium_Clang/releases",
+                    "regex": "tag/v$matchChrome32version-r$matchChrome32build-win32-sse3[\\s\\S]*chrome.zip - $sha1"
+                }
+            }
+        }
+    }
 }
