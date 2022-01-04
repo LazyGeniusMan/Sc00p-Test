@@ -8,13 +8,13 @@ jobs:
     steps:
     - name: Download & Extract Files 64 bit
       run: |
-#        oldURL1="https://www.dbvis.com/product_download/dbvis-11.0.5/media/dbvis_windows-x64_11_0_5.zip"
+        # oldURL1="https://www.dbvis.com/product_download/dbvis-11.0.5/media/dbvis_windows-x64_11_0_5.zip"
         newURL1="https://github.com/Hibbiki/chromium-win64/releases/download/v96.0.4664.93-r929512/chrome.sync.7z"
-#        oldFile1=${oldURL1##*/}
+        # oldFile1=${oldURL1##*/}
         newFile1=${newURL1##*/}
-#        aria2c $oldURL1
+        # aria2c $oldURL1
         aria2c $newURL1
-#        7z x $oldFile1 -o64bit/old
+        # 7z x $oldFile1 -o64bit/old
         7z x $newFile1 -o64bit/new
     - name: List Files 64 bit
       run: |
@@ -23,13 +23,13 @@ jobs:
         cd ..
     - name: Download & Extract Files 32 bit
       run: |
-#        oldURL2="https://www.dbvis.com/product_download/dbvis-11.0.5/media/dbvis_windows-x64_11_0_5.zip"
+        # oldURL2="https://www.dbvis.com/product_download/dbvis-11.0.5/media/dbvis_windows-x64_11_0_5.zip"
         newURL2="https://github.com/Hibbiki/chromium-win32/releases/download/v96.0.4664.93-r929512/chrome.sync.7z"
-#        oldFile2=${oldURL2##*/}
+        # oldFile2=${oldURL2##*/}
         newFile2=${newURL2##*/}
-#        aria2c $oldURL2
+        # aria2c $oldURL2
         aria2c $newURL2
-#        7z x $oldFile2 -o32bit/old
+        # 7z x $oldFile2 -o32bit/old
         7z x $newFile2 -o32bit/new
     - name: List Files 32 bit
       run: |
