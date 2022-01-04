@@ -1,18 +1,18 @@
 {
     "##": "Check chromium.woolyss.com for different versions of Chromium releases.",
-    "version": "abc",
+    "version": "96.0.4664.93-r929512",
     "description": "Browser aiming for safer, faster, and more stable way for all users to experience the web.",
     "homepage": "https://www.chromium.org",
     "license": "BSD-3-Clause",
     "notes": "32-bit lastest version is 95.0.4638.69-r920003-1, don't update if you have 32-bit PC",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/macchrome/winchrome/releases/download/v96.0.4664.93-r929512-Win64/ungoogled-chromium-96.0.4664.93-1_Win64.7z",
-            "hash": "sha1:c886a6bcec6795a8bc64787a65102ad712f72a32"
+            "url": "https://github.com/Hibbiki/chromium-win64/releases/download/v96.0.4664.93-r929512/chrome.sync.7z",
+            "hash": "sha1:32dc3f7a270e2c3b6a83cef7ef0b544b19f82ebf"
         },
         "32bit": {
-            "url": "https://github.com/macchrome/winchrome/releases/download/v95.0.4638.69-r920003-Win64/ungoogled-chromium-95.0.4638.69-1_Win32.7z",
-            "hash": "351153f35a41b3df2d9a530b04b0c8d6f402c0aed6bff8ae05a11fb603201fe6"
+            "url": "https://github.com/Hibbiki/chromium-win64/releases/download/v96.0.4664.93-r929512/chrome.sync.7z",
+            "hash": "sha1:5213ce657a4ef2eb098d1d236182e21d363d3a8a"
         }
     },
     "extract_dir": "Chrome-bin",
