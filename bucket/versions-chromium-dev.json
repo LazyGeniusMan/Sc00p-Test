@@ -9,7 +9,7 @@
             "hash": "31e9d0dd8422317182f0aebc998c129d5de62bf4864956d55a4923b380899da2"
         }
     },
-    "extract_dir": "Chrome-win",
+    "extract_dir": "chrome-win",
     "bin": [
         "chrome.exe",
         [
