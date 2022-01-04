@@ -15,18 +15,26 @@
     },
     "extract_dir": "chrome-win32",
     "bin": [
-        "chrome.exe",
         [
             "chrome.exe",
-            "chromium-dev"
+            "chromium-dev",
+            "--user-data-dir=\"$dir\\User Data\""
         ]
     ],
     "shortcuts": [
         [
             "chrome.exe",
-            "Chromium (dev)"
+            "Chromium (Dev)",
+            "--user-data-dir=\"$dir\\User Data\""
         ]
     ],
+    "post_install": [
+        "if (!(Test-Path \"$dir\\User Data\\*\") -and (Test-Path \"$env:LocalAppData\\Chromium\\User Data\")) {",
+        "    info '[Portable Mode]: Copying user data...'",
+        "    Copy-Item \"$env:LocalAppData\\Chromium\\User Data\\*\" \"$dir\\User Data\" -Recurse",
+        "}"
+    ],
+    "persist": "User Data",
     "checkver": {
         "url": "https://github.com/RobRich999/Chromium_Clang/releases",
         "regex": "tree/v(?<chrome64version>[\\d.]+)-r(?<chrome64build>[\\d]+)-win64-sse3[\\s\\S]*tree/v(?<chrome32version>[\\d.]+)-r(?<chrome32build>[\\d]+)-win32-sse3",
