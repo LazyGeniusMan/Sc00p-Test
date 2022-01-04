@@ -9,7 +9,7 @@
             "hash": "355080dac66247af238b3dee081fe59e160fe38718543963f90511b443b1666c"
         }
     },
-    "extract_dir": "Chrome-bin-sync",
+    "extract_dir": "Chrome-win",
     "bin": [
         "chrome.exe",
         [
@@ -24,14 +24,14 @@
         ]
     ],
     "checkver": {
-        "url": "https://chromium.woolyss.com/api/v3/?os=windows&bit=64&type=dev-codecs-sync&out=json",
-        "jsonpath": "$.chromium.windows.download",
-        "regex": "v([\\d.]+-r\\d+)-Win64"
+        "url": "https://chromium.woolyss.com/api/?os=windows&bit=64&editor=%22The%20Chromium%20Authors%22&out=string",
+        "regex": "version=(?<chromeVersion>[\\d.]+);revision=(?<build>[\\d]+)",
+        "replace": "${chromeVersion}-r${build}"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/macchrome/chromium/releases/download/v$version-Win64/Chrome-bin-sync.7z"
+                "url": "https://storage.googleapis.com/chromium-browser-snapshots/Win_x64/$matchBuild/chrome-win.zip"
             }
         }
     }
