@@ -3,12 +3,12 @@ on:
 name: Test File
 jobs:
   file1:
-    name: Test chromium
+    name: Test chromium no sync
     runs-on: ubuntu-latest
     steps:
     - name: Download & Extract Files 64 bit
       run: |
-        oldURL1="https://github.com/macchrome/winchrome/releases/download/v96.0.4664.93-r929512-Win64/ungoogled-chromium-96.0.4664.93-1_Win64.7z"
+        oldURL1="https://github.com/Hibbiki/chromium-win64/releases/download/v96.0.4664.93-r929512/chrome.nosync.7z"
         newURL1="https://github.com/Hibbiki/chromium-win64/releases/download/v96.0.4664.93-r929512/chrome.sync.7z"
         oldFile1=${oldURL1##*/}
         newFile1=${newURL1##*/}
@@ -23,7 +23,7 @@ jobs:
         cd ..
     - name: Download & Extract Files 32 bit
       run: |
-        oldURL2="https://github.com/macchrome/winchrome/releases/download/v95.0.4638.69-r920003-Win64/ungoogled-chromium-95.0.4638.69-1_Win32.7z"
+        oldURL2="https://github.com/Hibbiki/chromium-win32/releases/download/v96.0.4664.93-r929512/chrome.nosync.7z"
         newURL2="https://github.com/Hibbiki/chromium-win32/releases/download/v96.0.4664.93-r929512/chrome.sync.7z"
         oldFile2=${oldURL2##*/}
         newFile2=${newURL2##*/}
