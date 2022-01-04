@@ -8,15 +8,14 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/macchrome/winchrome/releases/download/v96.0.4664.93-r929512-Win64/ungoogled-chromium-96.0.4664.93-1_Win64.7z",
-            "hash": "sha1:c886a6bcec6795a8bc64787a65102ad712f72a32",
-            "extract_dir": "ungoogled-chromium-96.0.4664.93-1_Win64"
+            "hash": "sha1:c886a6bcec6795a8bc64787a65102ad712f72a32"
         },
         "32bit": {
             "url": "https://github.com/macchrome/winchrome/releases/download/v95.0.4638.69-r920003-Win64/ungoogled-chromium-95.0.4638.69-1_Win32.7z",
-            "hash": "351153f35a41b3df2d9a530b04b0c8d6f402c0aed6bff8ae05a11fb603201fe6",
-            "extract_dir": "ungoogled-chromium-95.0.4638.69-1_Win32"
+            "hash": "351153f35a41b3df2d9a530b04b0c8d6f402c0aed6bff8ae05a11fb603201fe6"
         }
     },
+    "extract_dir": "Chrome-bin",
     "bin": [
         "chrome.exe",
         [
@@ -31,25 +30,24 @@
         ]
     ],
     "checkver": {
-        "github": "https://github.com/macchrome/winchrome/",
-        "regex": "/v(?<chromeVersion>[\\d.]+)-r(?<build>[\\d]+)-Win64/ungoogled-chromium-[\\d.]+(?<end>-\\d)_Win(32|64)\\.7z",
-        "replace": "${chromeVersion}-r${build}${end}",
-        "reverse": true
+        "github": "https://github.com/Hibbiki/chromium-win64/releases/latest",
+        "regex": ">v([\\d.\\-r]+)</h1>"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/macchrome/winchrome/releases/download/v$matchChromeversion-r$matchBuild-Win64/ungoogled-chromium-$matchChromeversion$matchEnd_Win64.7z",
+                "url": "https://github.com/Hibbiki/chromium-win64/releases/download/v$version/chrome.sync.7z",
                 "hash": {
-                    "url": "https://github.com/macchrome/winchrome/releases/tag/v$matchChromeversion-r$matchBuild-Win64",
-                    "regex": "(?s)$basename.*?$sha1"
-                },
-                "extract_dir": "ungoogled-chromium-$matchChromeversion$matchEnd_Win64"
+                    "url": "https://github.com/Hibbiki/chromium-win64/releases/latest",
+                    "regex": "$sha1 \\.\\./out/x64/chrome.sync.7z"
+                }
             },
             "32bit": {
-                "url": "https://github.com/macchrome/winchrome/releases/download/v95.0.4638.69-r920003-Win64/ungoogled-chromium-95.0.4638.69-1_Win32.7z",
-                "hash": "sha1:f629743de7d1539fe6c1a6948891c2cef1e334f9",
-                "extract_dir": "ungoogled-chromium-95.0.4638.69-1_Win32"
+                "url": "https://github.com/Hibbiki/chromium-win64/releases/download/v$version/chrome.sync.7z",
+                "hash": {
+                    "url": "https://github.com/Hibbiki/chromium-win32/releases/latest",
+                    "regex": "$sha1 \\.\\./out/x86/chrome.sync.7z"
+                }
             }
         }
     }
