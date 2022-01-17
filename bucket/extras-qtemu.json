@@ -1,5 +1,5 @@
 {
-    "version": " ",
+    "version": "ads",
     "description": "Graphical User Interface for QEMU written in Qt",
     "homepage": "https://gitlab.com/qtemu/gui",
     "license": "GPL-2.0-or-later",
