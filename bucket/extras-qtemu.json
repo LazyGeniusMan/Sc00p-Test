@@ -9,7 +9,7 @@
             "hash": "93EAEC7AA025139D8F935FF34EC25C643409601DDFE6B42F5C2CAF4BAD2B03E5"
         }
     },
-    "extract_dir": "qtemu_portable_x86_64"
+    "extract_dir": "qtemu_portable_x86_64",
     "shortcuts": [
         [
             "qtemu.exe",
