@@ -17,8 +17,8 @@
         ]
     ],
     "checkver": {
-        "url": "https://gitlab.com/qtemu/gui/-/releases",
-        "regex": "\\/tags\\/([\\d.]+)"
+        "url": "https://gitlab.com/api/v4/projects/10442008/releases",
+        "jp": "$..tag_name"
     },
     "autoupdate": {
         "architecture": {
