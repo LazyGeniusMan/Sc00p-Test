@@ -1,0 +1,30 @@
+{
+    "version": "2.0",
+    "description": "Graphical User Interface for QEMU written in Qt",
+    "homepage": "https://gitlab.com/qtemu/gui",
+    "license": "GPL-2.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/dazedcat19/FMD2/releases/download/2.0.31.0/fmd_2.0.31.0_x86_64-win64.7z",
+            "hash": "93EAEC7AA025139D8F935FF34EC25C643409601DDFE6B42F5C2CAF4BAD2B03E5"
+        }
+    },
+    "extract_dir": "qtemu_portable_x86_64"
+    "shortcuts": [
+        [
+            "qtemu.exe",
+            "QtEmu"
+        ]
+    ],
+    "checkver": {
+        "url": "https://gitlab.com/qtemu/gui/-/releases",
+        "regex": "releases\/([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.carlavilla.es/qtemu/qtemu_portable_x86_64.zip"
+            }
+        }
+    }
+}
