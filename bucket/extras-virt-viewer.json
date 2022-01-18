@@ -1,5 +1,5 @@
 {
-    "version": "11.0-1.0",
+    "version": "abc",
     "description": "The virtual machine console viewer",
     "homepage": "https://virt-manager.org",
     "license": "GPL-3.0-or-later",
@@ -33,11 +33,13 @@
         "regex": "virt-viewer-x64-([\\d.-]+)\\.msi"
     },
     "autoupdate": {
-        "64bit": {
-            "url": "https://virt-manager.org/download/sources/virt-viewer/virt-viewer-x64-$version.msi"
-        },
-        "32bit": {
-            "url": "https://virt-manager.org/download/sources/virt-viewer/virt-viewer-x86-$version.msi"
+        "architecture": {
+            "64bit": {
+                "url": "https://virt-manager.org/download/sources/virt-viewer/virt-viewer-x64-$version.msi"
+            },
+            "32bit": {
+                "url": "https://virt-manager.org/download/sources/virt-viewer/virt-viewer-x86-$version.msi"
+            }
         }
     }
 }
