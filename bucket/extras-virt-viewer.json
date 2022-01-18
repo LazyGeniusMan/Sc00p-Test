@@ -1,5 +1,5 @@
 {
-    "version": "abc",
+    "version": "11.0-1.0",
     "description": "The virtual machine console viewer",
     "homepage": "https://virt-manager.org",
     "license": "GPL-3.0-or-later",
