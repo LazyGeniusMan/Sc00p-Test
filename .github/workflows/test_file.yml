@@ -23,7 +23,7 @@ jobs:
         cd ..
     - name: Download & Extract Files 32 bit
       run: |
-        oldURL2="https://github.com/twpayne/chezmoi/releases/download/v2.9.5/chezmoi_2.10.0_windows_amd64.zip"
+        oldURL2="https://github.com/twpayne/chezmoi/releases/download/v2.9.5/chezmoi_2.9.5_windows_amd64.zip"
         newURL2="https://github.com/twpayne/chezmoi/releases/download/v2.10.0/chezmoi_2.10.0_windows_i386.zip"
         oldFile2=${oldURL2##*/}
         newFile2=${newURL2##*/}
