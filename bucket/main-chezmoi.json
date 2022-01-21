@@ -25,7 +25,7 @@
                     "url": "$baseurl/checksums.txt",
                     "regex": "$sha256\\s*$basename"
                 }
-            }
+            },
             "32bit": {
                 "url": "https://github.com/twpayne/chezmoi/releases/download/v$version/chezmoi_$version_windows_i386.zip",
                 "hash": {
