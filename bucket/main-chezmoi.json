@@ -6,11 +6,11 @@
     "architecture": {
         "64bit": {
             "url": "https://www.gyan.dev/ffmpeg/builds/packages/ffmpeg-5.0-full_build.7z",
-            "hash": "928e4282818a75bf5115093e5a1687dbc2d30bf94cfd63511fd7460620451f31",
+            "hash": "928e4282818a75bf5115093e5a1687dbc2d30bf94cfd63511fd7460620451f31"
         },
         "64bit": {
             "url": "https://www.gyan.dev/ffmpeg/builds/packages/ffmpeg-5.0-full_build.7z",
-            "hash": "928e4282818a75bf5115093e5a1687dbc2d30bf94cfd63511fd7460620451f31",
+            "hash": "928e4282818a75bf5115093e5a1687dbc2d30bf94cfd63511fd7460620451f31"
         }
     },
     "bin": "chezmoi.exe",
