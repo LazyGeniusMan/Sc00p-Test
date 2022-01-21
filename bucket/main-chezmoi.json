@@ -5,8 +5,12 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/twpayne/chezmoi/releases/download/v2.10.0/chezmoi_2.10.0_windows_amd64.zip",
-            "hash": "d7c217fed3a090c7dbaf34bcc54d595f1bb2dbdbb834d47b15a1ce05e8b856fe"
+            "url": "abc",
+            "hash": "def"
+        },
+        "32bit": {
+            "url": "ghi",
+            "hash": "jkl"
         }
     },
     "bin": "chezmoi.exe",
