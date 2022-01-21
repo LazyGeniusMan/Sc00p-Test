@@ -1,16 +1,12 @@
 {
-    "version": "abc",
+    "version": "2.10.0",
     "description": "Manage your dotfiles across multiple machines, securely. With first-class Windows support.",
     "homepage": "https://chezmoi.io",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://www.gyan.dev/ffmpeg/builds/packages/ffmpeg-5.0-full_build.7z",
-            "hash": "928e4282818a75bf5115093e5a1687dbc2d30bf94cfd63511fd7460620451f31"
-        },
-        "64bit": {
-            "url": "https://www.gyan.dev/ffmpeg/builds/packages/ffmpeg-5.0-full_build.7z",
-            "hash": "928e4282818a75bf5115093e5a1687dbc2d30bf94cfd63511fd7460620451f31"
+            "url": "https://github.com/twpayne/chezmoi/releases/download/v2.10.0/chezmoi_2.10.0_windows_amd64.zip",
+            "hash": "d7c217fed3a090c7dbaf34bcc54d595f1bb2dbdbb834d47b15a1ce05e8b856fe"
         }
     },
     "bin": "chezmoi.exe",
